@@ -1,0 +1,150 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>جمعية نظم | {{page.title}}</title>
+  <meta name="description" content="{{page.description}}">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+	<script type="text/javascript" src="http://fast.fonts.com/jsapi/424ac1d1-a1ce-48ab-a4de-547fd775d55d.js"></script>
+	<link rel="stylesheet" href="css/960/960_12_col_rtl.css" />
+	<link rel="stylesheet" href="css/960/reset_rtl.css" />
+	<link rel="stylesheet" href="css/960/text_rtl.css" />
+	<link rel="stylesheet" href="css/style.css" />	
+	<link rel="shortcut icon" href="img/shortcuticon.png" />
+	<link rel="stylesheet" href="css/nivo-slider.css" />
+    <link rel="stylesheet" href="css/space.css" />
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/vendor/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+	<div id="container" class="container_12">    <!--container start-->
+    	<div class="grid_12">
+			{% include header.html %}      
+		</div>
+			{{content}}
+			
+	</div>      <!--container end-->
+    
+	<div id="footer-wrapper">
+		<div id="footer" class="container_12">   <!-- footer start-->
+			<div class="grid_3 alfa">
+				<h4>خريطة الموقع</h4>
+				<ul class="nav">
+					<li><a href="index.html">الصفحه الرئيسية</a></li>
+					<li><a href="#">من نحن؟</a></li>
+					<li><a href="geeks.html">مجلة نظم ... مهاويس</a></li>
+					<li><a href="index.html">كيفية الاشتراك</a></li>
+					<li><a href="index.html">شاركنا اقترحاتك .. اتصل بنا</a></li>
+					
+					
+				</ul>
+			</div>
+			<div class="grid_4">
+				<h4>صورنا على فليكر</h4>
+				<img src="img/flicker.png"/>
+			</div>	
+			<div class="grid_5 omega">
+				<h4>أضف بريدك على قائمتنا البريدية</h4>
+				<form>
+					<input type="text" name="e-mail" placeholder="EX:mmetwally@nozom.org" />
+				</form>
+				<p class="true grid_3">Thanks .. check ur mail now</p><br />
+				<p class="false grid_3">Sorry .. wrong mail or duplicated one</p>
+				<div id="follow">
+					<h4 class="grid_3">كيف تصل لنا</h4>
+					<ul>
+						<li><span>المقر الرئيسي : </span>43 شارع احمد ماهر . المنصورة الدقهلية مصر</li>
+						<li><span>البريد الالكترونى: </span>info@nozom.org</li>
+						<li><span>رقم التليفون: </span> 222 22 22 016 +2</li>
+						<li>
+						
+								<a class="t" href=""></a>
+								<a class="f" href=""></a>
+							
+						</li>
+							
+					</ul>
+				</div>
+			</div>
+			<div class="grid_12 line"></div>
+			<div class="grid_2 back">
+				<a href="">Back to Top</a>
+			</div>
+			<div  id="copy" class="grid_10">
+				<p>Copyrights © 2011, All rights reserved to <span>Nozom NGO.</span> Designed by Metoo</p>
+			</div>
+		</div>
+	</div>        <!--footer end-->
+
+
+  <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+	<script src="js/plugins/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+			$(window).load(function() {
+			$('#slider').nivoSlider({
+				effect:'random', // Specify sets like: 'fold,fade,sliceDown'
+				slices:15, // For slice animations
+				boxCols: 8, // For box animations
+				boxRows: 4, // For box animations
+				animSpeed:500, // Slide transition speed
+				pauseTime:3000, // How long each slide will show
+				startSlide:0, // Set starting Slide (0 index)
+				directionNav:true, // Next & Prev navigation
+				directionNavHide:true, // Only show on hover
+				controlNav:false, // 1,2,3... navigation
+				controlNavThumbs:false, // Use thumbnails for Control Nav
+				controlNavThumbsFromRel:false, // Use image rel for thumbs
+				controlNavThumbsSearch: '.jpg', // Replace this with...
+				controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
+				keyboardNav:true, // Use left & right arrows
+				pauseOnHover:true, // Stop animation while hovering
+				manualAdvance:false, // Force manual transitions
+				captionOpacity:0.8, // Universal caption opacity
+
+        
+			});
+		});
+
+    </script>  
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
