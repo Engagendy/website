@@ -129,7 +129,7 @@ strong {
   IE + Opera = font-weight: bold.
   Gecko + WebKit = font-weight: bolder.
 */
-  font-weight: bold;
+  font-weight: normal;
 }
 
 img {
