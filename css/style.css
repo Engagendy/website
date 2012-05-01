@@ -66,6 +66,7 @@ h6 {
 #navbar li a{
 	text-decoration: none;
 	color:#ffffff;
+	text-shadow: 1px 1px 0 #788880;
 	font-size:14px;
 	text-transform:capitalize;
 		
@@ -73,6 +74,7 @@ h6 {
 #navbar li a.active, #navbar li a:hover{
 	color:#C46D3B;
 	border-bottom: 1px dashed #C46D3B;
+	text-shadow: 1px 1px 0 #788880;
 	padding-bottom:10px;
 	
 }
@@ -301,10 +303,34 @@ hr{
     border:0;
     display:block;
 }
+.author {
+	margin:0 20px;
+	display: block;
+	padding: 0 0 10px 0;
+}
+.date {
+	color: #C46D3B;
+	margin-right: 10px ;
+}
 #post-header-wrapper {
+	padding: 15px 0;
 	background: #E3CBAC url(../img/bg.png);
+}
+#post-body-wrapper {
+	margin-top: 20px;
+	font-size: 1.3em;;
 }
 #post-author-wrapper {
 	background: #9C9985 url(../img/bg.png);
 	border-bottom: 5px solid #788880;
+	padding: 10px 0;
+	color: #fff;
+	text-shadow: 1px 1px 0 #788880;
 }
+#post-author-wrapper img{
+	padding: 3px;
+	margin: 10px;
+	background: #fff;
+	box-shadow: 0 0 5px 1px #666;
+}
+
