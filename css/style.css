@@ -317,4 +317,36 @@ hr{
 	background: #fff;
 	box-shadow: 0 0 5px 1px #666;
 }
+/* engagendy, fatama, muhammed refai*/
+#inner-header{
+	padding: 15px 0;
+	background: #E3CBAC url(../img/bg.png);
+}
+
+#inner-body{
+	background: #9C9985 url(../img/bg.png);
+	border-bottom: 5px solid #788880;
+	padding: 10px 0;
+	color: #fff;
+	text-shadow: 1px 1px 0 #788880;
+	font-size:16px;
+}
+
+#inner-body p{
+	font-size:18px;
+	line-height: 27px;
+}
+
+#inner-body ul{
+	margin-right: 50px;	
+}
+#inner-body li{
+	line-height: 24px;
+}
+
+
+
+
+
+
 
